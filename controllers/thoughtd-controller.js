@@ -26,7 +26,9 @@ const thoughtsController = {
     // Get all available Thoughts
     getAllThoughts(req, res) {
         Thoughts.find({})
-            .populate({ path: 'reactions', select: '-__v' })
+            .populate({ 
+                path: 'reactions', 
+                select: '-__v' })
             .select('-__v')
             // .sort({_id: -1})
             .then(dbThoughtsData => res.json(dbThoughtsData))
@@ -39,7 +41,9 @@ const thoughtsController = {
     // Get a certain thought by ID
     getThoughtsById({ params }, res) {
         Thoughts.findOne({ _id: params.id })
-            .populate({ path: 'reactions', select: '-__v' })
+            .populate({ 
+                path: 'reactions', 
+                select: '-__v' })
             .select('-__v')
             .then(dbThoughtsData => {
                 if (!dbThoughtsData) {
