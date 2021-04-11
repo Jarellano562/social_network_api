@@ -3,6 +3,9 @@
 Cash is King so is DATA! MongoDB is a popular choice for many social network due to its speed with large amounts of data and flexibility with unstructured data. The foundation of all these platforms is data. This is an API for a social network web application where users can share their thoughts, react to friends' thoughts and create a friend list. 
 ## Mock Up 
 ![MOCKUP](mockup.gif) 
+[MOCKUP VID 🎥 ](https://drive.google.com/file/d/1QWzS8zI2kiVx9UoFwRQenWN6GiuaF2fE/view?usp=sharing)
+
+
 ## User Story
   
 ```
@@ -41,3 +44,5 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Usage
 
 - TERMINAL $npm start
+- INSOMNIA Test Routes GET / POST / PUT / DELETE 
+- ROOT: http://localhost:3001/api_____________________
